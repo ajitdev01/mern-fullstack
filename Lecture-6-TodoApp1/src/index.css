@@ -1,0 +1,46 @@
+body {
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+/* Card */
+.todo-card {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.todo-card:hover {
+  transform: translateY(-3px);
+}
+
+/* Input */
+.todo-input {
+  height: 46px;
+  border-radius: 10px 0 0 10px;
+}
+
+.todo-input:focus {
+  box-shadow: none;
+  border-color: #0d6efd;
+}
+
+/* Button */
+.todo-btn {
+  border-radius: 0 10px 10px 0;
+  font-weight: 600;
+}
+
+/* List Item */
+.list-group-item {
+  border-radius: 10px;
+  margin-bottom: 8px;
+  border: 1px solid #e9ecef;
+  transition: background 0.2s ease;
+}
+
+.list-group-item:hover {
+  background: #f8f9fa;
+}
