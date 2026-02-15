@@ -1,0 +1,77 @@
+/* Background */
+body {
+  background: linear-gradient(135deg, #f1f3f5, #e9ecef);
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+/* Card */
+.todo-card {
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 18px;
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.todo-card:hover {
+  transform: translateY(-3px);
+}
+
+/* Input */
+.todo-input {
+  height: 48px;
+  border-radius: 12px;
+}
+
+/* Todo List */
+.todo-list {
+  margin-top: 10px;
+}
+
+/* Todo Item */
+.todo-item {
+  border-radius: 12px;
+  margin-bottom: 10px;
+  padding: 14px 16px;
+  transition: background 0.25s ease;
+}
+
+.todo-item:hover {
+  background: #f8f9fa;
+}
+
+/* Completed */
+.todo-item.completed .todo-text {
+  text-decoration: line-through;
+  color: #6c757d;
+}
+
+/* Todo Text */
+.todo-text {
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+
+/* Actions */
+.todo-actions button {
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Status Badge */
+.status-badge {
+  cursor: pointer;
+  padding: 10px;
+  font-size: 0.75rem;
+}
+
+/* Buttons hover */
+.btn-outline-primary:hover,
+.btn-outline-danger:hover {
+  transform: scale(1.05);
+}
