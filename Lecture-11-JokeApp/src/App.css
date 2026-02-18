@@ -1,0 +1,28 @@
+body {
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+.joke-card {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+.joke-text {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.joke-setup {
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.joke-delivery {
+  font-size: 1.05rem;
+  margin-top: 10px;
+  color: #198754;
+  font-weight: 600;
+}

@@ -1,0 +1,35 @@
+/* Base */
+.box,
+.big-box {
+  border-radius: 16px;
+  transition: all 0.3s ease;
+}
+
+/* Small Box */
+.box-light {
+  background: linear-gradient(135deg, #e3f2fd, #ffffff);
+  color: #212529;
+}
+
+.box-dark {
+  background: linear-gradient(135deg, #212529, #343a40);
+  color: #f8f9fa;
+}
+
+/* Big Box */
+.big-light {
+  background: linear-gradient(135deg, #a5f3fc, #ecfeff);
+  color: #0f172a;
+}
+
+.big-dark {
+  background: linear-gradient(135deg, #374151, #111827);
+  color: #e5e7eb;
+}
+
+/* Hover */
+.box:hover,
+.big-box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+}
