@@ -1,0 +1,94 @@
+:root {
+  --bg: #0f0f0f;
+  --card-bg: #1a1a1a;
+  --text: #e7e7e7;
+  --correct: #8ef36b;
+  --correct-bg: rgba(142, 243, 107, 0.1);
+  --incorrect: #ff4a4a;
+  --incorrect-bg: rgba(255, 74, 74, 0.15);
+  --active: #00eaff;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg);
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.card {
+  width: 90%;
+  max-width: 900px;
+  background: var(--card-bg);
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.1);
+}
+
+.title {
+  font-size: 2.5rem;
+  color: var(--active);
+  margin-bottom: 25px;
+}
+
+.display-text {
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  text-align: left;
+  user-select: none;
+  padding: 20px;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.05);
+  max-height: 50vh;
+  overflow-y: auto;
+}
+
+/* Text States */
+.normal {
+  color: var(--text);
+}
+
+.correct {
+  color: var(--correct);
+  background-color: var(--correct-bg);
+  border-radius: 4px;
+}
+
+.incorrect {
+  color: var(--incorrect);
+  background-color: var(--incorrect-bg);
+  border-radius: 4px;
+  text-decoration: underline;
+}
+
+.active {
+  color: var(--active);
+  border-right: 2px solid var(--active);
+  animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+  50% {
+    border-right: 2px solid transparent;
+  }
+}
+
+/* Input hidden visually, but captures typing */
+.hidden-input {
+  opacity: 0;
+  position: absolute;
+  pointer-events: none;
+}
+.UserInput{
+    text-align: center;
+    margin: 20px;
+    color: whitesmoke;
+}
