@@ -1,0 +1,38 @@
+.employee-card {
+    border: none;
+    border-radius: 14px;
+    background: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.employee-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+}
+
+.avatar-circle {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    color: #fff;
+    font-size: 26px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.role-badge {
+    background: rgba(99, 102, 241, 0.1);
+    color: #4f46e5;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.elite-form {
+    border-radius: 16px;
+    border: none;
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.15);
+}
